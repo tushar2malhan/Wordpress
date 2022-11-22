@@ -1,0 +1,93 @@
+This is miniOrange OAuth plugin Debug Log file
+[2022-11-13 14:44:26 UTC] : Authorization Request Sent => http://localhost:8000/wp-json/moserver/authorize?client_id=dWFHwOmsRxYmHGSYKigOTqKrSeADKvyM&scope=profile openid email&redirect_uri=http://localhost:8001&response_type=code&state=b3RoZXI=
+[2022-11-13 14:46:56 UTC] : Authorization Response Received
+[2022-11-13 14:46:56 UTC] : OAuth Flow
+[2022-11-13 14:46:56 UTC] : Token request content => 
+[2022-11-13 14:46:56 UTC] : Token Request Sent => http://localhost:8000/wp-json/moserver/token
+[2022-11-13 14:46:56 UTC] : body =>
+[2022-11-13 14:46:56 UTC] : Array
+(
+    [grant_type] => authorization_code
+    [code] => 3c4c26e4228ff173bb5f9b4f7996dc8975d062b3
+    [redirect_uri] => http://localhost:8001
+)
+
+[2022-11-13 14:46:56 UTC] : headers =>
+[2022-11-13 14:46:56 UTC] : Array
+(
+    [Accept] => application/json
+    [charset] => UTF - 8
+    [Authorization] => Basic ZFdGSHdPbXNSeFltSEdTWUtpZ09UcUtyU2VBREt2eU06WVFWTUxiZnZYR0pyUXBub1d1WW5PWmhwdWJQZHhXbm4=
+    [Content-Type] => application/x-www-form-urlencoded
+)
+
+[2022-11-13 14:46:56 UTC] : Token Response Received => ERROR : Invalid response recieved while fetching token
+[2022-11-13 14:46:56 UTC] : Invalid response recieved while fetching token
+[2022-11-13 14:46:56 UTC] : WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 7: Failed to connect to localhost port 8000: Connection refused
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+
+[2022-11-13 14:47:23 UTC] : Authorization Response Received
+[2022-11-13 14:47:23 UTC] : OAuth Flow
+[2022-11-13 14:47:23 UTC] : Token request content => 
+[2022-11-13 14:47:23 UTC] : Token Request Sent => http://localhost:8000/wp-json/moserver/token
+[2022-11-13 14:47:23 UTC] : body =>
+[2022-11-13 14:47:23 UTC] : Array
+(
+    [grant_type] => authorization_code
+    [code] => c977ab8afa9f229e8f02f6bdc47d52d7eb48cc7e
+    [redirect_uri] => http://localhost:8001
+)
+
+[2022-11-13 14:47:23 UTC] : headers =>
+[2022-11-13 14:47:23 UTC] : Array
+(
+    [Accept] => application/json
+    [charset] => UTF - 8
+    [Authorization] => Basic ZFdGSHdPbXNSeFltSEdTWUtpZ09UcUtyU2VBREt2eU06WVFWTUxiZnZYR0pyUXBub1d1WW5PWmhwdWJQZHhXbm4=
+    [Content-Type] => application/x-www-form-urlencoded
+)
+
+[2022-11-13 14:47:23 UTC] : Token Response Received => ERROR : Invalid response recieved while fetching token
+[2022-11-13 14:47:23 UTC] : Invalid response recieved while fetching token
+[2022-11-13 14:47:23 UTC] : WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 7: Failed to connect to localhost port 8000: Connection refused
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+
+[2022-11-13 17:00:02 UTC] : Authorization Request Sent => http://localhost:8000/wp-json/moserver/authorize?client_id=dWFHwOmsRxYmHGSYKigOTqKrSeADKvyM&scope=profile openid email&redirect_uri=http://localhost:8001&response_type=code&state=b3RoZXI=
+[2022-11-13 17:02:41 UTC] : Authorization Request Sent => http://localhost:8000/wp-json/moserver/authorize?client_id=dWFHwOmsRxYmHGSYKigOTqKrSeADKvyM&scope=profile openid email&redirect_uri=http://localhost:8001&response_type=code&state=b3RoZXI=
+[2022-11-13 17:02:51 UTC] : Authorization Request Sent => http://localhost:8000/wp-json/moserver/authorize?client_id=dWFHwOmsRxYmHGSYKigOTqKrSeADKvyM&scope=profile openid email&redirect_uri=http://localhost:8001&response_type=code&state=b3RoZXI=

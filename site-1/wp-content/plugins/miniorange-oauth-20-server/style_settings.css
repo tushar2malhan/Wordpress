@@ -1,0 +1,901 @@
+.mo_support_layout{
+       width: 93%;
+       background-color:#FFFFFF;
+       border:1px solid #CCCCCC;
+       padding-left:20px;
+}
+.mo_table_layout {
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	padding:0px 10px 10px 10px;
+	margin-bottom: 10px;
+}
+
+.mo_oauth_server_premium_option {
+    background-color: rgba(168, 168, 168, 0.7);
+    padding: 2%;
+    opacity: 0.5;
+}
+
+.mo_oauth_server_premium_option_text {
+    position: absolute;
+    font-weight: bold;
+    margin: 5.5% 11%;
+    z-index: 1;
+}
+
+.mo_oauth_server_premium_feature {
+	color:red;
+}
+
+/* .mo_table_layout td {
+
+} */
+.mo_table_layout input[type=text] {
+	width: 80%;
+}
+.mo_table_layout td strong {
+	margin-left: 10px;
+}
+
+.mo_eve_table_layout {
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	padding:0px 10px 0px 10px;
+	margin:10px 15% 10px 0px;
+}
+.col1 {
+	width: 20%;
+}
+.panel_toggle {
+	cursor: pointer;
+}
+.panel_toggle:hover {
+	text-decoration: underline;
+}
+.mo_eve_table_textbox {
+	width: 80%;
+}
+.mo_table_td_checkbox {
+	padding-left: 10px;
+}
+.mo_table_textbox {
+	width:80%;
+}
+.mo_settings_table {
+	width: 100%;
+}
+.mo_settings_table tr td:first-child {
+	width: 30%;
+}
+.mo_heading_margin {
+	margin-left: 0px;
+}
+.error_wid_login {
+    background-color: #FFEBE8;
+    border: 1px dashed #FF0000;
+    color: #FF0000;
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-weight: 500;
+    padding: 6px;
+	margin-left: 200px;
+    width: 80%;
+	clear:both !important;
+}
+
+.login_wid li{
+	margin:5px;
+}
+
+.login_wid{
+		list-style-type:none;
+		border: 1px dashed #999999;
+		width:98%;
+		float:left;
+		padding:5%;
+
+	}
+.login_wid li{
+	width:48%;
+	float:left;
+	margin:2px;
+}
+.openid_social_login{
+	padding:5px 0px 0px 0px;
+	clear:both;
+	width:100% !important;
+}
+
+.login_wid li input{
+	width:85%;
+	float:left;
+	margin:2px;
+}
+
+
+	
+
+.mo_oauth_local_pricing_free_tab{
+	background-color: rgba(34, 153, 221, 0.82)!important;
+}
+.mo_oauth_local_pricing_paid_tab{
+	background-color: #1a71a4 !important;
+}
+.mo_oauth_local_pricing_text{
+	font-size: 14px !important;
+	color: #fff !important;
+	font-weight: 600 !important;
+
+}
+.mo_oauth_local_pricing_sub_header{
+	margin: 2px !important;
+	color: #fff !important;
+}
+.mo_oauth_local_pricing_header{
+	color: #fff !important;
+	margin: 4px !important;
+}
+.mo_oauth_local_pricing_table{
+	text-align:center;
+	font-size: 15px !important;
+	background-color:#FFFFFF;
+}
+
+.mo_oauth_premium_thumbnail{
+	width: 350px;
+	padding: 4px;
+	margin-bottom: 10px;
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: border .2s ease-in-out;
+	-o-transition: border .2s ease-in-out;
+	transition: border .2s ease-in-out;
+}
+
+.mo-fa-icon>tr>td>i.fa{
+	color:#5b8a0f;
+
+}
+
+.mo_align-center>tr>td{
+	text-align:center !important;
+}
+
+.mo_table-bordered, .mo_table-bordered>tbody>tr>td{
+	border: 1px solid #ddd;
+}
+
+.mo_table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #f9f9f9;
+}
+
+.mo_table-bordered>thead>tr>th{
+	vertical-align:top !important;
+}
+
+.mo_plan-desc{
+	font-size:14px !important;
+}
+
+/*Included for the feedback form*/
+.mo_modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 100px;
+	top: 0;
+	margin-left:220px;
+	width: 50%;
+	height: 100%;
+
+}
+.mo_modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 55%;
+}
+.mo_close {
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1;
+	color: #000000;
+	text-shadow: 0 1px 0 #212121;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.mo_close:hover,
+.mo_close:focus {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+
+.mo_tutorial_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+	z-index: 0;
+
+}
+
+.mo_fade {
+	opacity: 0;
+	-webkit-transition: opacity 0.15s linear;
+	-o-transition: opacity 0.15s linear;
+	transition: opacity 0.15s linear;
+}
+.mo_fade.in {
+	opacity: 1;
+}
+
+.mo_premium_text {
+	color: #FF0000;
+	visibility: hidden;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+.mo_premium_text.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+   However, delay the fade out process for 2.5 seconds */
+   -webkit-animation: mo_fadein 0.5s, mo_fadeout 0.5s 5.5s;
+   animation: mo_fadein 0.5s, mo_fadeout 0.5s 5.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes mo_fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes mo_fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes mo_fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes mo_fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+ /* The switch - the box around the mo_slider */
+ .mo_switch {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+  }
+  .mo_switch:before {
+	content: "ON";
+  }
+  /* Hide default HTML checkbox */
+  .mo_switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The mo_slider */
+  .mo_slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .mo_slider:before {
+	position: absolute;
+	content: "";
+	height: 15px;
+	width: 15px;
+	left: 3px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .mo_slider {
+	background-color: #46d253;
+  }
+  
+  input:focus + .mo_slider {
+	box-shadow: 0 0 1px #46d253;
+  }
+  
+  input:checked + .mo_slider:before {
+	-webkit-transform: translateX(24px);
+	-ms-transform: translateX(24px);
+	transform: translateX(24px);
+  }
+  
+  /* Rounded mo_sliders */
+  .mo_slider.mo_round {
+	border-radius: 15px;
+  }
+  
+  .mo_slider.mo_round:before {
+	border-radius: 50%;
+  } 
+
+  .with_on_text {
+	  color: #fff;
+	  padding: 3px 10px 10px 5px;
+  }
+
+  .mo_oauth_server_noapps_text {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 16px;
+	margin: 15px auto -5px auto;
+	background: rgba(21, 21, 21, 0.05);
+  }
+
+  .mo_idp_divided_layout {
+    margin-bottom: 10px;
+    height: auto;
+    width: 55%;
+    margin-top: 2%
+}
+
+.mo_idp_divided_layout.mo-idp-full {
+    width: 95%;
+    margin: auto
+}
+.mo_idp_pricing_layout {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    height: auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 5px 24px 15px 20px;
+    border-radius: 4px;
+    margin-top: 1% !important
+}
+
+.mo_idp_table_layout.mo-idp-center,
+.mo_idp_pricing_layout.mo-idp-center {
+    margin: auto
+}
+
+.mo_idp_license_plan
+{
+    font-size: medium;
+    margin-bottom:2%; 
+    text-align:center; 
+    width:100%;
+    padding: 10px;
+    line-height: normal;
+}
+
+.mo_idp_license_table td {
+    padding: 15px;
+}
+
+.mo_idp_price_row
+{
+    /*background-color:#eff0f1;*/
+    font-size: 32px; 
+    font-weight: 600;
+    border: 2px solid #f1f1f1;
+}
+
+.mo_idp_all_inc_cell
+{
+    line-height: 1.8; 
+    font-size: 20px; 
+    font-weight: 600;
+    border: 2px solid #f1f1f1;
+}
+
+.license_plan_points{
+    background-color:#ffe599;
+    font-size: large;
+}
+
+.license_plan_title
+{
+    padding: 20px !important;
+    font-weight:500;
+    background-color:#38761d; 
+    color:white; 
+    border-radius:12px 12px 0 0; 
+    font-size: 25px;
+    vertical-align: top;
+}
+
+.license_plan_name
+{
+/*    font-weight: 700; */
+    letter-spacing: 1px;
+}
+
+.license_plan_wp_premium{
+    background-color:#d9ead3;
+    
+    font-weight:600;
+}
+
+.license_plan_miniorange{
+    background-color:#d9ead3; 
+    
+    font-weight:600;
+}
+
+.mo_license_upgrade_button
+{
+    padding: 10px !important;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: 0.3s;
+    background-color:#112e3c; 
+    color:white;
+    cursor: pointer;
+}
+
+.mo_license_upgrade_button:hover 
+{
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+}
+
+.mo-info-text
+{
+    visibility: hidden;	
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    background-color:#626262;
+    color: white;
+    text-align: center;
+    padding: 6px; 
+    border-radius: 6px;
+	white-space: nowrap;
+    /* Position the tooltip text */
+  /*  position: absolute;
+    z-index: 1;
+    bottom: 10%; 
+    left: 50%;  */
+    margin-left: 10px; 
+    font-size: smaller; 
+    /* Fade in tooltip */
+    opacity: 50;
+    transition: opacity 0.3s;
+}
+
+.mo-info-icon:hover .mo-info-text 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.mo_idp_settings_table {
+    width: 100%
+}
+
+.mo_idp_settings_table tr td:first-child {
+    width: 30%
+}
+
+.mo_idp_table_textbox {
+    width: 80%
+}
+
+.mo_idp_table_contact {
+    width: 95%
+}
+
+a {
+    cursor: pointer
+}
+
+.mo_idp_table_layout {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    padding: 0 24px 24px 20px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 63%;
+    margin-top: 1% !important
+}
+
+.moservertooltip {
+    position: relative;
+    display: inline-block;
+    size: letter;
+}
+.moservertooltip .moservertooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.moservertooltip .moservertooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.moservertooltip .moservertooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.moservertooltip .moservertooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: small;
+    opacity: 50;
+    transition: opacity 0.3s;
+}
+/* Tooltip container */
+.moservertooltip {
+	position: relative;
+	display: inline-block;
+	size: letter;
+	/* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.moservertooltip .moservertooltiptext {
+	visibility: hidden;
+	width: 120px;
+
+	background-color:grey;
+	color: white;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	font-size: small;
+	/* Fade in tooltip */
+	opacity: 50;
+	transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.moservertooltip .moservertooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.moservertooltip:hover .moservertooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+/* default clients list UI */
+  .mo_oauth_server_default_client_icon {height:50px;width:50px}
+  .mo_oauth_server_default_client_icon:hover { background-color: #eee;}
+  #mo_oauth_server_default_clients li {
+	  border: 1px solid #ddd;
+	  background-color: #f6f6f6;
+	  padding: 8px 2px;
+	  display:inline-block; width:120px;height:80px;text-align:center;vertical-align:middle;
+	  margin:2px;
+  }
+
+
+ #mo_oauth_server_default_clients_input {
+	background-image: url('css/searchicon.png');
+	background-position: 6px 8px;
+	background-repeat: no-repeat;
+	width: 100%;
+	font-size: 15px;
+	padding: 8px 12px 8px 20px;
+	border: 1px solid #ddd;
+	margin-bottom: 8px;
+  }
+  #mo_oauth_server_default_clients {list-style-type: none;padding: 0;margin: 0;}
+  #mo_oauth_server_default_clients li a {
+	text-decoration: none;
+	font-size: 12px;
+	line-height:14px;
+	color: black;
+	display: block;
+	min-height: 80px;
+  }
+
+  .mo-oauth-setup-guide-button{
+	border: 1px black solid;
+	display:inline-block; 
+	background-color:#ffffff;
+	padding:4px 8px;
+	border-radius:4px;
+	color:#000;
+	font-weight:600;
+	font-size: 13px;
+	margin-right: 10px;
+    margin-top: 2px;
+}
+
+/* css for request demo page */
+
+.mo_modal-demo {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: auto;
+}
+
+.mo_demo_table_layout {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 10px;
+}
+
+.mo_demo_layout {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: "Nunito", sans-serif;
+}
+
+.mo_oauth_cloud_demo_outer_table{
+	margin-top:20px;
+}
+.mo_oauth_demo_table_layout{
+	padding:0px 32px 0px 16px;
+}
+
+.mo_oauth_demo_form_checkbox{
+	margin:7px 5px 7px 5px;
+}
+
+.mo_oauth_demo_submit_button{
+	margin:10px 10px 20px 334px;
+	background:#012970;
+	border:1px solid #012970;
+	border-radius: 3px;
+	color:white;
+	height:35px;
+	padding: 2px 10px 2px 10px;
+	cursor: pointer;
+}
+
+.mo_oauth_video_demo_container{
+	margin: 20px 0px; 
+	padding: 10px 6px 40px 10px; 
+	background-color:white ;
+	border:1px solid #cccccc
+}
+
+.mo_oauth_video_demo_container_form{
+	width:320px ; 
+	margin-left: 25px; 
+	padding: 27px; 
+	border:1px solid grey; 
+	border-radius:5px;
+	margin-top:15px
+}
+
+.mo_oauth_video_demo_email{
+	width: 320px;; 
+	height: 35px;
+}
+
+.mo_oauth_video_demo_datetime_container{
+	margin-top:20px;
+}
+
+.mo_oauth_video_demo_date{
+	width: 154px; 
+	height:35px;
+}
+
+.mo_oauth_video_demo_time{
+	width:155px; 
+	height:35px
+}
+
+.mo_oauth_video_demo_usecase{
+	background-color:#2271b1 ; 
+	color:white; 
+	border-color:#2271b1; 
+	padding: 4px 12px; 
+	border-width:1px ;
+	border-radius:3px; 
+	margin:18px 0px 0px 155px;
+	height:32px;
+	width:82px;
+}
+
+.mo_oauth_video_demo_submit_button{
+	margin:10px 10px 7px 126px;
+	background:#012970;
+	border:1px solid #012970;
+	border-radius: 3px;
+	color:white;
+	height:35px;
+	padding: 2px 10px 2px 7px;
+	cursor: pointer;
+}
+.mo_oauth_demo_container_gif_section{
+	margin:40px 14px 0px 0px;
+}
+.mo_oauth_video_demo_message{
+	font-size:33px; 
+	line-height:45px;color:black
+}
+
+
+img.mo_oauth_video_demo_gif{
+	height:175px; 
+	width:350px; 
+	border:2px solid #eaeaea; 
+	border-radius:5px;  
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+	margin-top:23px;
+}
+.mo_oauth_video_demo_bottom_message{
+	font-size:20px; 
+	line-height:30px;color:#012970;
+}
+
+.mo_oauth_video_demo_bottom_message_first{
+	margin-top:50px;
+}
+
+img.mo_oauth_video_demo_tick_icon{
+	height:19px; 
+	width:19px;
+	margin-right:3px
+}
+
+img.mo_oauth_vedio_demo_support_icon{
+	height:19px; 
+	width:19px;
+	margin-right:3px;
+}
+
+.mo_oauth_demo_request_usecase{
+	resize: vertical; 
+	width:350px; 
+	height:100px;
+}
+
+.mo_oauth_demo_request_veretical_line{
+	height:100%; 
+	border-left:1px solid #eaeaea; 
+	padding-right:25px;
+}
+
+.mo_oauth_video_demo_form_usecase{
+	padding: 10px 10px;
+}
+
+/* Security notice css */
+
+html {
+	scroll-behavior: smooth;
+}
+
+.security-banner {
+	position: relative;
+	font-family: Arial;
+	font-size: 1rem;
+	border: none;
+	background-color: #000000;
+	padding: 15px;
+	text-align: center;
+}
+
+.security-banner-content {
+	text-align: center;
+	color: white;
+}
+
+.security-banner .banner-header {
+	font-weight: 600;
+	color: #d01013;
+	font-size: 1rem;
+}
+
+.security-banner-header {
+	font-weight: 700;
+	font-size: 1rem;
+	margin: 10px 0;
+}
+
+.security-banner-content .button-tab {
+	position: inherit;
+	float: right;
+	margin-top: -20px;
+}
+
+.button-tab {
+	position: absolute;
+	display: inline-block;
+	top: 10px;
+	right: 10px;
+}
+
+.security-banner .notice-important {
+	font-size: 1.2rem;
+	color: #ffcf00;
+	text-align: center;
+}
+
+.security-banner .security-banner-content {
+	font-size: 0.8rem;
+}
+
+.security-banner .security-banner-footer p {
+	font-size: 1rem;
+	color: #f5eded;
+}
+
+.warning-icon {
+	color: #d01013;
+}
+
+/* Security notice css ends here */

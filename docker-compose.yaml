@@ -1,0 +1,83 @@
+version: '3'
+
+services:
+
+  nginx:
+    build: ./nginx    # build from Dockerfile in ./nginx
+    ports:
+      - "8085:80"
+    depends_on:
+      - wordpress-site1
+      - wordpress-site2
+    networks:
+      - wpsite
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro   # for immediate changes 
+      - wp_files:/var/www/html
+      - ./nginx/nginx-entrypoint.sh:/docker-entrypoint.d/nginx-entrypoint.sh:ro
+    restart: always
+
+  db:
+    image: mysql:5.7
+    platform: linux/amd64
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
+      MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+    networks:
+      - wpsite
+
+  phpmyadmin:
+    links:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password 
+    networks:
+      - wpsite
+
+  wordpress-site1: # Wordpress site 1
+    links:
+      - db
+    image: wordpress:latest
+    ports:
+      - '8000:80' # This site will be accessible on localhost:8000
+    restart: always
+    volumes: ['./site-1:/var/www/html'] # Set different path on host
+    environment:
+      WORDPRESS_DB_HOST: "${WORDPRESS_DB_HOST}"
+      WORDPRESS_DB_NAME: "${WORDPRESS_DB_PASSWORD_1}"
+      WORDPRESS_DB_USER: "${WORDPRESS_DB_PASSWORD_1}"
+      WORDPRESS_DB_PASSWORD: "${WORDPRESS_DB_PASSWORD_1}"
+    networks:
+      - wpsite
+
+  wordpress-site2: # Wordpress site 2
+    links:
+      - db
+    image: wordpress:latest
+    ports:
+      - '8001:80' # This site will be accessible on localhost:8001
+    restart: always
+    volumes: ['./site-2:/var/www/html'] # Set different path on host
+    environment:
+      WORDPRESS_DB_HOST: "${WORDPRESS_DB_HOST}"
+      WORDPRESS_DB_NAME:  "${WORDPRESS_DB_PASSWORD_2}"
+      WORDPRESS_DB_USER:  "${WORDPRESS_DB_PASSWORD_2}"
+      WORDPRESS_DB_PASSWORD:  "${WORDPRESS_DB_PASSWORD_2}"
+    networks:
+      - wpsite
+
+networks:
+  wpsite:
+volumes:
+  wp_files:
+  db_data:

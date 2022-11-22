@@ -1,0 +1,17 @@
+{
+	"openidconnect": {
+	"label":"Custom openid connect client", "type":"openidconnect", "image":"openid-connect.png", "id":"Client ID","secret":"Client Secret","authorize":"Authorization Endpoint","token":"Token Endpoint","userinfo":"Userinfo Endpoint","doc":"https://plugins.miniorange.com/step-by-step-guide-for-wordpress-oauth-server"
+	},
+	"oauth2": {
+	"label":"Custom OAuth 2.0 Client", "type":"oauth2", "image":"oauth2.png", "id":"Client ID","secret":"Client Secret","authorize":"Authorization Endpoint","token":"Token Endpoint","userinfo":"Userinfo Endpoint","doc":"https://plugins.miniorange.com/step-by-step-guide-for-wordpress-oauth-server"
+	},
+	"rocketchat": {
+	"label":"Rocket Chat", "type":"oauth2", "image":"rocketchat.png", "id":"WordPress ID","secret":"WordPress Secret","authorize":"Authorization Path","token":"Token Path","userinfo":"Identity Path", "custom fields":{"Identity Token Sent Via":"Header","Server Type":"Custom"},"doc":"https://plugins.miniorange.com/guide-to-configure-rocket-chat-oauth-client"
+	},
+	"invision": {
+		"label":"Invision Community", "type":"oauth2", "image":"invis.png", "id":"Client ID","secret":"Client Secret","authorize":"Authorization Endpoint","token":"Token Endpoint","userinfo":"Userinfo Endpoint","doc":"https://plugins.miniorange.com/guide-to-configure-invision-community-oauth-client"
+	},
+	"wordpress": {
+		"label":"WordPress", "type":"oauth2", "image":"wp.png", "id":"Client ID","secret":"Client Secret","authorize":"Authorization Endpoint","token":"Token Endpoint","userinfo":"Userinfo Endpoint","doc":"https://plugins.miniorange.com/guide-to-setup-single-sign-on-between-two-wordpress-sites"
+	}
+}

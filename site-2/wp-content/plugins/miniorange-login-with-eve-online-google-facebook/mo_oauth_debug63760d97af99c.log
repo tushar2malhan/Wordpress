@@ -1,0 +1,45 @@
+[2022-11-17 10:31:54 UTC] : Authorization Request Sent => http://localhost:8000/wp-json/moserver/authorize?client_id=ysnXxcwNYmCQfIvtfXLEzAfWKwiEqKWE&scope=profile&redirect_uri=http://localhost:8001&response_type=code&state=d29yZHByZXNz
+[2022-11-17 10:32:05 UTC] : Authorization Response Received
+[2022-11-17 10:32:05 UTC] : OAuth Flow
+[2022-11-17 10:32:05 UTC] : Token request content => 
+[2022-11-17 10:32:05 UTC] : Token Request Sent => http://localhost:8000/wp-json/moserver/token
+[2022-11-17 10:32:05 UTC] : body =>
+[2022-11-17 10:32:05 UTC] : Array
+(
+    [grant_type] => authorization_code
+    [code] => 53caafb109e6b02430474b2bfa0ea976fad30af0
+    [redirect_uri] => http://localhost:8001
+)
+
+[2022-11-17 10:32:05 UTC] : headers =>
+[2022-11-17 10:32:05 UTC] : Array
+(
+    [Accept] => application/json
+    [charset] => UTF - 8
+    [Authorization] => Basic eXNuWHhjd05ZbUNRZkl2dGZYTEV6QWZXS3dpRXFLV0U6amRXY1JXVVBCQUpFUlVpWk56ZGdxcmRsT0tDZkpITlE=
+    [Content-Type] => application/x-www-form-urlencoded
+)
+
+[2022-11-17 10:32:05 UTC] : Token Response Received => ERROR : Invalid response recieved while fetching token
+[2022-11-17 10:32:05 UTC] : Invalid response recieved while fetching token
+[2022-11-17 10:32:05 UTC] : WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => cURL error 7: Failed to connect to localhost port 8000: Connection refused
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+

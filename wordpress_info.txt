@@ -1,0 +1,92 @@
+Docker
+
+	Start 2 Wordpress with single 
+	db								= docker-compose up -d db phpmyadmin
+
+	check why docker exited 		= docker logs <docker number>  
+
+	delete eveything 				= docker system prune -a -f && docker system df && docker builder prune -f && docker volume prune -f
+
+	get inside running container 	= docker exec -it <docker number> bash
+
+	run sql in docker container 
+	of sql image					= mysql -u root -p
+
+	check all users			   	    = select User from mysql.user;
+
+	mysql> show databases;			= show databases;
+
+Wordpress
+
+	under dashboard 
+				> Posts > Add new posts > Edit updatea
+			    > Appearance > Themes > Activate new theme OR Customize theme  
+			    > Settings > tag line, timezone etc
+				|					Blogs pages show at most == paging ( how many pages to show)		
+
+				> Plugins > Add new > Install plugin > Activate plugin  
+				|						- plugins for new features 
+				|						- can make website slow
+				|						- 
+				> Pages > Add new page > Edit update
+				|						- static pages like blog page, about page etc
+				|						- elementary plugin for good designs
+				|						- we need to link all these pages with each other
+				| form page 			- wpforms lite > contact form > 
+				|	                      > under wpforms > SMTP > Install and Activate WP Mail SMTP by WPForms
+				|						  > setup WP mail SMTP by clicking gmail icon
+
+				> Users > Add new > Add user > Role  
+				|							  > Subscriber (can only read) 
+				|							  > Author (can read and write) 
+				|							  > Editor (can read, write and edit) 
+				|							  > Admin (can do everything)
+				
+				| WP code for snippets		  > Under your selected theme in plugins in file directory > functions.php
+				
+				|								path -> C:\Users\tushar\Desktop\IBL-PROJECT\wordpress\site-1\wp-content\themes\twentytwentytwo\functions.php
+												
+												function learningWordPress_resources() {
+													wp_enqueue_style('style', get_stylesheet_uri());
+													wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', NULL, 1.0, true);
+
+													wp_localize_script('main', 'wpApiSettings', array(
+														// 'root_url' => get_site_url(),
+														'nonce' => wp_create_nonce('wp_rest')  ,  # POST REQUEST 
+														'siteUrl' => get_site_url()				  # Dynamic URL
+													));
+												}
+
+												add_action('wp_enqueue_scripts', 'learningWordPress_resources');
+
+				| wp forms plugin 			  > under wpforms > simple contact form > add new form > add fields 
+											  > save form > copy shortcode > save under page > use wp form > paste shortcode
+
+				| PERMALINKS 		   		  -    				> Settings > Permalinks > Post name
+				| (set Permalinks first ) CRUD OPERATIONS url  -  http://localhost:8000/wp-json/wp/v2/posts
+
+
+
+Hosting two instances at Once  Sharing the same DB mysql
+
+	Don't forget that every wordpress service will need it's own database. 
+	You can either define for each wordpress service it's own database 
+	service or use single (shared) DB service and create on it 
+	multiple databases (one for each wordpress service).
+
+	To do so first start up only db and phpmyadmin services using:
+
+	|	 docker-compose up -d db phpmyadmin		|
+
+	Since PhpMyAdmin is set to be exposed on port 8080 go to http://localhost:8080,
+	log in and create for each wordpress service it's own database and user.
+	Here create User and DB based WORDPRESS_DB_ variables based in docker compose yaml file
+
+	Once done, update WORDPRESS_DB_* env variables (if needed) 
+	in docker-compose.yaml to match databases and user credentials
+	you just created in yaml file and if everything is ok start all wordpress services.
+
+	Based on example docker-compose.yaml you should be able to access:
+
+	http://localhost:8000/wp-admin/update-core.php		-> wordpress site 1 
+	http://localhost:8001/wp-admin/update-core.php		-> wordpress site 2

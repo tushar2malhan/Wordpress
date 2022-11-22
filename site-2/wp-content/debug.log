@@ -1,0 +1,25 @@
+[17-Nov-2022 10:08:15 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): Connection refused in /var/www/html/wp-includes/class-wpdb.php on line 1775
+[17-Nov-2022 10:24:42 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in /var/www/html/wp-includes/formatting.php:1098
+Stack trace:
+#0 /var/www/html/wp-includes/formatting.php(4562): wp_check_invalid_utf8(Object(WP_Error))
+#1 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/handler/oauth_handler.php(65): esc_html(Object(WP_Error))
+#2 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/handler/oauth_handler.php(7): MOOAuth_Hanlder->getToken('http://localhos...', 'authorization_c...', 'ysnXxcwNYmCQfIv...', 'jdWcRWUPBAJERUi...', '0e85ec1885834b1...', 'http://localhos...', 1, 0)
+#3 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/class-mo-oauth-widget.php(442): MOOAuth_Hanlder->getAccessToken('http://localhos...', 'authorization_c...', 'ysnXxcwNYmCQfIv...', 'jdWcRWUPBAJERUi...', '0e85ec1885834b1...', 'http://localhos...', 1, 0)
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): mooauth_login_validate('')
+#5 /var/ in /var/www/html/wp-includes/formatting.php on line 1098
+[17-Nov-2022 10:32:05 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in /var/www/html/wp-includes/formatting.php:1098
+Stack trace:
+#0 /var/www/html/wp-includes/formatting.php(4562): wp_check_invalid_utf8(Object(WP_Error))
+#1 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/handler/oauth_handler.php(65): esc_html(Object(WP_Error))
+#2 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/handler/oauth_handler.php(7): MOOAuth_Hanlder->getToken('http://localhos...', 'authorization_c...', 'ysnXxcwNYmCQfIv...', 'jdWcRWUPBAJERUi...', '53caafb109e6b02...', 'http://localhos...', 1, 0)
+#3 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/class-mo-oauth-widget.php(442): MOOAuth_Hanlder->getAccessToken('http://localhos...', 'authorization_c...', 'ysnXxcwNYmCQfIv...', 'jdWcRWUPBAJERUi...', '53caafb109e6b02...', 'http://localhos...', 1, 0)
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): mooauth_login_validate('')
+#5 /var/ in /var/www/html/wp-includes/formatting.php on line 1098
+[22-Nov-2022 09:41:01 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Error could not be converted to string in /var/www/html/wp-includes/formatting.php:1098
+Stack trace:
+#0 /var/www/html/wp-includes/formatting.php(4562): wp_check_invalid_utf8(Object(WP_Error))
+#1 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/handler/oauth_handler.php(65): esc_html(Object(WP_Error))
+#2 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/handler/oauth_handler.php(7): MOOAuth_Hanlder->getToken('http://localhos...', 'authorization_c...', 'IKbzqvNgJKybzTO...', 'FCmrLnYfXvjKxUx...', 'acef135cfa20e7e...', 'http://localhos...', '1', '0')
+#3 /var/www/html/wp-content/plugins/miniorange-login-with-eve-online-google-facebook/class-mo-oauth-widget.php(442): MOOAuth_Hanlder->getAccessToken('http://localhos...', 'authorization_c...', 'IKbzqvNgJKybzTO...', 'FCmrLnYfXvjKxUx...', 'acef135cfa20e7e...', 'http://localhos...', '1', '0')
+#4 /var/www/html/wp-includes/class-wp-hook.php(308): mooauth_login_validate('')
+ in /var/www/html/wp-includes/formatting.php on line 1098
